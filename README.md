@@ -7,9 +7,9 @@ This starter is based on Vite. There is also [a Webpack based starter](https://g
 # Quick start
 
 ```bash
-git clone https://github.com/keycloakify/keycloakify-starter
-cd keycloakify-starter
-yarn install # Or use an other package manager, just be sure to delete the yarn.lock if you use another package manager.
+git clone https://github.com/matpackages/keycloakify-theme
+cd keycloakify-theme
+npm install
 ```
 
 # Testing the theme locally
