@@ -1,8 +1,6 @@
-<p align="center">
-    <i>🚀 <a href="https://keycloakify.dev">Keycloakify</a> v11 starter 🚀</i>
-    <br/>
-    <br/>
-</p>
+# keycloakify-theme
+
+Generated from template [keycloakify/keycloakify-starter @ 28cdb22](https://github.com/keycloakify/keycloakify-starter/tree/28cdb22e734549d36eac545752ab1767f6cedfbd).
 
 This starter is based on Vite. There is also [a Webpack based starter](https://github.com/keycloakify/keycloakify-starter-webpack).
 
