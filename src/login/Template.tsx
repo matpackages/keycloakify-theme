@@ -96,7 +96,10 @@ export default function Template(props: TemplateProps<KcContext, I18n>) {
                     )}
                     {(() => {
                         const node = !(auth !== undefined && auth.showUsername && !auth.showResetCredentials) ? (
-                            <h1 id="kc-page-title">{headerNode}</h1>
+                            <div>
+                                <h1 id="kc-page-title">{headerNode}</h1>
+                                <h2>Realm: {kcContext.realm.displayName}</h2>
+                            </div>
                         ) : (
                             <div id="kc-username" className={kcClsx("kcFormGroupClass")}>
                                 <label id="kc-attempted-username">{auth.attemptedUsername}</label>
