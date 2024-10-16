@@ -1,4 +1,4 @@
-import "./main.css"
+import "./main.scss"
 import { Suspense, lazy } from "react";
 import type { ClassKey } from "keycloakify/login";
 import type { KcContext } from "./KcContext";
@@ -51,7 +51,7 @@ const classes = {
     kcHtmlClass: "",
     kcBodyClass: "",
     kcFormHeaderClass: "kc-form-header",
-    kcButtonPrimaryClass: "btn-primary",
+    kcButtonPrimaryClass: "btn btn-primary",
     kcButtonBlockClass: "",
     kcButtonClass: "",
     kcButtonLargeClass: "",
