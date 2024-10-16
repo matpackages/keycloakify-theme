@@ -16,6 +16,16 @@ npm install
 
 [Documentation](https://docs.keycloakify.dev/v/v10/testing-your-theme)
 
+TLDR:
+```
+npx keycloakify add-story
+npm run storybook
+```
+
+Added stories: `login.ftl`, `register.ftl`, `login-reset-password.ftl`, `select-authenticator.ftl`, `webauthn-authenticate.ftl`
+
+Check [Storybook](https://storybook.keycloakify.dev/?path=/story/login-login-ftl--default) for a preview of all available stories.
+
 # How to customize the theme
 
 [Documentation](https://docs.keycloakify.dev/v/v10/customization-strategies)
