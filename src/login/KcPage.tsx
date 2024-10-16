@@ -58,5 +58,8 @@ const classes = {
     kcFormGroupClass: "mb-2",
     kcLabelClass: "form-label",
     kcInputClass: "form-control",
-    kcInputErrorMessageClass: "invalid-feedback"
+    kcInputErrorMessageClass: "invalid-feedback",
+    kcInputGroup: "input-group",
+    kcFormPasswordVisibilityButtonClass: "btn btn-outline-secondary",
+    kcFormPasswordVisibilityIconShow: "fas fa-solid fa-lock",
 } satisfies { [key in ClassKey]?: string };

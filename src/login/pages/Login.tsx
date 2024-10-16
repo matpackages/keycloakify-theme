@@ -188,6 +188,7 @@ export default function Login(props: PageProps<Extract<KcContext, { pageId: "log
                                 />
                                 <div>TEST-123</div>
                                 <Icon icon="fa6-solid:lock" />
+                                <i className="fa-solid fa-user"></i>
                             </div>
                         </form>
                     )}
