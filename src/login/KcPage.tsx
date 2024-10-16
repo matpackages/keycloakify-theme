@@ -26,7 +26,7 @@ export default function KcPage(props: { kcContext: KcContext }) {
                         <Login
                             {...{ kcContext, i18n, classes }}
                             Template={Template}
-                            doUseDefaultCss={true}
+                            doUseDefaultCss={false}
                         />
                     );
                     default:
@@ -36,7 +36,7 @@ export default function KcPage(props: { kcContext: KcContext }) {
                                 i18n={i18n}
                                 classes={classes}
                                 Template={Template}
-                                doUseDefaultCss={true}
+                                doUseDefaultCss={false}
                                 UserProfileFormFields={UserProfileFormFields}
                                 doMakeUserConfirmPassword={doMakeUserConfirmPassword}
                             />
@@ -50,9 +50,13 @@ export default function KcPage(props: { kcContext: KcContext }) {
 const classes = {
     kcHtmlClass: "",
     kcBodyClass: "",
-    kcFormHeaderClass: "kc-form-header",
-    kcButtonPrimaryClass: "btn btn-primary",
+    kcFormHeaderClass: "",
+    kcButtonPrimaryClass: "btn-primary",
     kcButtonBlockClass: "",
-    kcButtonClass: "",
+    kcButtonClass: "btn",
     kcButtonLargeClass: "",
+    kcFormGroupClass: "mb-2",
+    kcLabelClass: "form-label",
+    kcInputClass: "form-control",
+    kcInputErrorMessageClass: "invalid-feedback"
 } satisfies { [key in ClassKey]?: string };
