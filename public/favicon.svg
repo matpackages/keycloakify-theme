@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
+<style type="text/css">
+	.blue-top{fill:#036F72;}
+	.blue-front{fill:#008E99;}
+	.red-front{fill:#F4580B;}
+	.red-side{fill:#EA6C34;}
+	.yellow-top{fill:#FCDC7A;}
+	.yellow-front{fill:#F9AD15;}
+	.yellow-side{fill:#F7CB4F;}
+</style>
+<g>
+	<g>
+		<polygon class="blue-top" points="175.17,249.96 325.82,186.89 174.86,122.93 24.47,186.51"/>
+		<polygon class="blue-front" points="175.17,431.27 24.47,367.81 24.47,186.51 175.17,249.96"/>
+		<polygon class="blue-front" points="175.11,431.65 325.82,368.19 325.82,186.89 175.11,250.34"/>
+	</g>
+	<g>
+		<polygon class="red-front" points="324.89,313.32 475.53,250.24 324.57,186.28 174.18,249.87"/>
+		<polygon class="red-front" points="324.89,494.62 174.18,431.16 174.18,249.87 324.89,313.32"/>
+		<polygon class="red-side" points="324.83,495 475.53,431.54 475.53,250.24 324.83,313.69"/>
+	</g>
+	<g>
+		<polygon class="yellow-top" points="324.89,132.03 475.53,68.96 324.57,5 174.18,68.58"/>
+		<polygon class="yellow-front" points="324.89,313.34 174.18,249.89 174.18,68.58 324.89,132.03"/>
+		<polygon class="yellow-side" points="324.83,313.72 475.53,250.27 475.53,68.96 324.83,132.41"/>
+	</g>
+</g>
+</svg>
