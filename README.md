@@ -30,6 +30,23 @@ Check [Storybook](https://storybook.keycloakify.dev/?path=/story/login-login-ftl
 
 [Documentation](https://docs.keycloakify.dev/v/v10/customization-strategies)
 
+### Customize CSS styles and classes only
+
+* Define classes, such as `kcHtmlClass: "my-html"` in `KcPage.tsx`
+* Use CSS file to define style of class `.my-html`
+
+### Customize DOM and CSS
+
+Customize a component freely (including its DOM structure):
+
+```
+npx keycloakify eject-page
+```
+
+Will add the page to your codebase.
+
+Ejected pages: `Template.tsx`, `login.ftl`
+
 # Building the theme
 
 You need to have [Maven](https://maven.apache.org/) installed to build the theme (Maven >= 3.1.1, Java >= 7).  
