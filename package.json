@@ -24,6 +24,7 @@
         "react-dom": "^18.2.0"
     },
     "devDependencies": {
+        "@iconify/react": "^5.0.2",
         "@storybook/react": "^8.1.10",
         "@storybook/react-vite": "^8.1.10",
         "@types/react": "^18.2.43",

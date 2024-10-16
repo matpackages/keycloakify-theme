@@ -6,6 +6,7 @@ import type { PageProps } from "keycloakify/login/pages/PageProps";
 import { getKcClsx, type KcClsx } from "keycloakify/login/lib/kcClsx";
 import type { KcContext } from "../KcContext";
 import type { I18n } from "../i18n";
+import { Icon } from '@iconify/react';
 
 export default function Login(props: PageProps<Extract<KcContext, { pageId: "login.ftl" }>, I18n>) {
     const { kcContext, i18n, doUseDefaultCss, Template, classes } = props;
@@ -186,6 +187,7 @@ export default function Login(props: PageProps<Extract<KcContext, { pageId: "log
                                     value={msgStr("doLogIn")}
                                 />
                                 <div>TEST-123</div>
+                                <Icon icon="fa6-solid:lock" />
                             </div>
                         </form>
                     )}
