@@ -1,6 +1,10 @@
 @import "bootstrap/scss/bootstrap";
 @import "@fortawesome/fontawesome-free/css/all.css";
 
+.password-visibility-icon {
+    width: 20px;
+}
+
 .invalid-feedback {
     display: block;
 }
