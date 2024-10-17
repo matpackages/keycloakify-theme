@@ -90,9 +90,12 @@ export default function Template(props: TemplateProps<KcContext, I18n>) {
                             </div>
                         </div>
                     )}
+                    <div className="text-center">
+                        <img src="/favicon.svg" alt="Logo" width="48" height="48" />
+                    </div>
                     {(() => {
                         const node = !(auth !== undefined && auth.showUsername && !auth.showResetCredentials) ? (
-                            <h1 id="kc-page-title">{headerNode} at {realm.displayNameHtml}</h1>
+                            <h1 className="text-center mt-2 lead" id="kc-page-title">{headerNode}</h1>
                         ) : (
                             <div id="kc-username" className={kcClsx("kcFormGroupClass")}>
                                 <label id="kc-attempted-username">{auth.attemptedUsername}</label>

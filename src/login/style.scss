@@ -1,0 +1,96 @@
+.btn {
+    font-weight: 500;
+    font-size: 90%;
+}
+
+.form-signin {
+    max-width: 420px;
+    padding: 1rem;
+}
+
+.card-responsive {
+    @media (min-width: 576px) {
+        --bs-card-border-width: var(--bs-border-width);
+        --bs-card-border-color: var(--bs-border-color-translucent);
+        --bs-card-border-radius: var(--bs-border-radius);
+        border: var(--bs-card-border-width) solid var(--bs-card-border-color);
+        border-radius: var(--bs-card-border-radius);
+        background: #fbfbfb;
+    }
+}
+
+.btn-light {
+    border-color: var(--bs-border-color-translucent);
+}
+
+.lead {
+    font-weight: 200;
+    font-size: 24px;
+}
+
+.lead strong {
+    font-weight: 400;
+}
+
+.form-label {
+    font-weight: 500;
+    font-size: 90%;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.form-sublink {
+    float: right;
+    font-size: 85%;
+    margin-top: .15rem;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.divider::before,
+.divider::after {
+    content: '';
+    flex-grow: 1;
+    height: 1px;
+    background: var(--bs-border-color-translucent);
+}
+
+.divider::before {
+    margin-right: 0.5rem;
+}
+
+.divider::after {
+    margin-left: 0.5rem;
+}
+
+.social-button {
+    display: block;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    opacity: 0.6;
+}
+
+.social-button:hover {
+    opacity: 1;
+}
+
+.social-icon {
+    height: 30px;
+    width: 30px;
+}
+
+.flex-list-item {
+    min-height: 100px;
+}

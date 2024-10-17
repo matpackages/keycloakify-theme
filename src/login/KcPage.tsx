@@ -50,6 +50,7 @@ export default function KcPage(props: { kcContext: KcContext }) {
 const classes = {
     kcHtmlClass: "",
     kcBodyClass: "",
+    kcLoginClass: "form-signin w-100 m-auto mt-2 mt-sm-5",
     kcFormHeaderClass: "",
     kcButtonPrimaryClass: "btn-primary",
     kcButtonBlockClass: "",
