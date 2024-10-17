@@ -66,6 +66,7 @@ export default function Template(props: TemplateProps<KcContext, I18n>) {
                                         aria-haspopup="true"
                                         aria-expanded="false"
                                         aria-controls="language-switch1"
+                                        className={"locale-dropdown-button"}
                                     >
                                         {currentLanguage.label}
                                     </button>

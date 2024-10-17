@@ -63,4 +63,7 @@ const classes = {
     kcFormPasswordVisibilityButtonClass: "btn btn-outline-secondary",
     kcFormPasswordVisibilityIconShow: "fa-solid fa-eye password-visibility-icon",
     kcFormPasswordVisibilityIconHide: "fa-solid fa-eye-slash password-visibility-icon",
+    kcLocaleDropDownClass: "dropdown",
+    kcLocaleListClass: "dropdown-menu",
+    kcLocaleItemClass: "dropdown-item",
 } satisfies { [key in ClassKey]?: string };
