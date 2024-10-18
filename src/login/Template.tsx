@@ -9,6 +9,7 @@ import type { I18n } from "./i18n";
 import type { KcContext } from "./KcContext";
 import { Icon } from '@iconify/react';
 import { initTooltips } from "../util";
+import logoUrl from "../../public/favicon.svg"
 
 export default function Template(props: TemplateProps<KcContext, I18n>) {
     const {
@@ -97,7 +98,7 @@ export default function Template(props: TemplateProps<KcContext, I18n>) {
                         </div>
                     )}
                     <div className="text-center">
-                        <img src="/favicon.svg" alt="Logo" width="48" height="48" />
+                        <img src={logoUrl} alt="Logo" width="48" height="48" />
                     </div>
                     {(() => {
                         const node = (
