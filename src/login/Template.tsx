@@ -108,13 +108,13 @@ export default function Template(props: TemplateProps<KcContext, I18n>) {
                         if (displayRequiredFields) {
                             return (
                                 <div className={kcClsx("kcContentWrapperClass")}>
-                                    <div className={clsx(kcClsx("kcLabelWrapperClass"), "subtitle")}>
+                                    <div className={clsx(kcClsx("kcLabelWrapperClass"), "subtitle", "display-none")}>
                                         <span className="subtitle">
                                             <span className="required">*</span>
                                             {msg("requiredFields")}
                                         </span>
                                     </div>
-                                    <div className="col-md-10">{node}</div>
+                                    <div className="">{node}</div>
                                 </div>
                             );
                         }

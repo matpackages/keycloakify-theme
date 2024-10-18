@@ -72,10 +72,7 @@ export default function LoginResetPassword(props: PageProps<Extract<KcContext, {
                     <div id="kc-form-options" className={kcClsx("kcFormOptionsClass")}>
                         <div className={kcClsx("kcFormOptionsWrapperClass")}>
                             <div className="d-grid d-block mt-2">
-                                <a
-                                    href={url.loginUrl}
-                                    className="btn btn-light"
-                                >{msg("backToLogin")}</a>
+                                <a href={url.loginUrl} className="btn btn-light">{msg("backToLogin")}</a>
                             </div>
                         </div>
                     </div>

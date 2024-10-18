@@ -57,21 +57,13 @@ export default function Register(props: RegisterProps) {
                     />
                 )}
                 {recaptchaRequired && (recaptchaVisible || recaptchaAction === undefined) && (
-                    <div className="form-group">
+                    <div className="form-group mt-3">
                         <div className={kcClsx("kcInputWrapperClass")}>
                             <div className="g-recaptcha" data-size="compact" data-sitekey={recaptchaSiteKey} data-action={recaptchaAction}></div>
                         </div>
                     </div>
                 )}
-                <div className={kcClsx("kcFormGroupClass")}>
-                    <div id="kc-form-options" className={kcClsx("kcFormOptionsClass")}>
-                        <div className={kcClsx("kcFormOptionsWrapperClass")}>
-                            <span>
-                                <a href={url.loginUrl}>{msg("backToLogin")}</a>
-                            </span>
-                        </div>
-                    </div>
-
+                <div className="">
                     {recaptchaRequired && !recaptchaVisible && recaptchaAction !== undefined ? (
                         <div id="kc-form-buttons" className={kcClsx("kcFormButtonsClass")}>
                             <button
@@ -99,6 +91,13 @@ export default function Register(props: RegisterProps) {
                             />
                         </div>
                     )}
+                    <div id="kc-form-options" className={kcClsx("kcFormOptionsClass")}>
+                        <div className={kcClsx("kcFormOptionsWrapperClass")}>
+                            <div className="d-grid d-block mt-2">
+                                <a href={url.loginUrl} className="btn btn-light">{msg("backToLogin")}</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </form>
         </Template>
