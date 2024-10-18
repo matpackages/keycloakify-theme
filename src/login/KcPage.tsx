@@ -51,7 +51,7 @@ const classes = {
     kcHtmlClass: "",
     kcBodyClass: "",
     kcLoginClass: "form-signin w-100 m-auto mt-2 mt-sm-5",
-    kcFormHeaderClass: "",
+    kcFormHeaderClass: "mb-3",
     kcButtonPrimaryClass: "btn-primary",
     kcButtonBlockClass: "",
     kcButtonClass: "btn",
@@ -67,4 +67,6 @@ const classes = {
     kcLocaleDropDownClass: "dropdown",
     kcLocaleListClass: "dropdown-menu",
     kcLocaleItemClass: "dropdown-item",
+    kcFormCardClass: "card-responsive p-sm-3",
+    kcSignUpClass: "text-center small text-muted",
 } satisfies { [key in ClassKey]?: string };

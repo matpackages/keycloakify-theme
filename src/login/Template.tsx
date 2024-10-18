@@ -53,7 +53,7 @@ export default function Template(props: TemplateProps<KcContext, I18n>) {
 
     return (
         <div className={kcClsx("kcLoginClass")}>
-            <div className={kcClsx("kcFormCardClass")}>
+            <div>
                 <header className={kcClsx("kcFormHeaderClass")}>
                     {enabledLanguages.length > 1 && (
                         <div className={kcClsx("kcLocaleMainClass")} id="kc-locale">
@@ -95,7 +95,7 @@ export default function Template(props: TemplateProps<KcContext, I18n>) {
                     </div>
                     {(() => {
                         const node = !(auth !== undefined && auth.showUsername && !auth.showResetCredentials) ? (
-                            <h1 className="text-center mt-2 lead" id="kc-page-title">{headerNode}</h1>
+                            <h1 className="text-center mt-2 lead mb-0" id="kc-page-title">{headerNode}</h1>
                         ) : (
                             <div id="kc-username" className={kcClsx("kcFormGroupClass")}>
                                 <label id="kc-attempted-username">{auth.attemptedUsername}</label>
@@ -124,9 +124,16 @@ export default function Template(props: TemplateProps<KcContext, I18n>) {
 
                         return node;
                     })()}
+                    {displayInfo && (
+                        <div id="kc-info" className={kcClsx("kcSignUpClass")}>
+                            <div id="kc-info-wrapper" className={kcClsx("kcInfoAreaWrapperClass")}>
+                                {infoNode}
+                            </div>
+                        </div>
+                    )}
                 </header>
                 <div id="kc-content">
-                    <div id="kc-content-wrapper">
+                    <div id="kc-content-wrapper" className={kcClsx("kcFormCardClass")}>
                         {/* App-initiated actions should not see warning messages about the need to complete the action during login. */}
                         {displayMessage && message !== undefined && (message.type !== "warning" || !isAppInitiatedAction) && (
                             <div
@@ -169,13 +176,6 @@ export default function Template(props: TemplateProps<KcContext, I18n>) {
                             </form>
                         )}
                         {socialProvidersNode}
-                        {displayInfo && (
-                            <div id="kc-info" className={kcClsx("kcSignUpClass")}>
-                                <div id="kc-info-wrapper" className={kcClsx("kcInfoAreaWrapperClass")}>
-                                    {infoNode}
-                                </div>
-                            </div>
-                        )}
                     </div>
                 </div>
             </div>

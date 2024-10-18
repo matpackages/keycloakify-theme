@@ -186,9 +186,6 @@ export default function Login(props: PageProps<Extract<KcContext, { pageId: "log
                                     type="submit"
                                     value={msgStr("doLogIn")}
                                 />
-                                <div>TEST-123</div>
-                                <Icon icon="fa6-solid:lock" />
-                                <i className="fa-solid fa-user"></i>
                             </div>
                         </form>
                     )}
