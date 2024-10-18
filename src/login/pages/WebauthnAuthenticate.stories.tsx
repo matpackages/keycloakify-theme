@@ -15,3 +15,11 @@ type Story = StoryObj<typeof meta>;
 export const Default: Story = {
     render: () => <KcPageStory />
 };
+
+export const WithAnotherWay: Story = {
+    render: () => <KcPageStory
+        kcContext={{
+            auth: { showTryAnotherWayLink: true },
+        }}
+    />
+};
