@@ -58,7 +58,7 @@ export default function UserProfileFormFields(props: UserProfileFormFieldsProps<
                                 <label htmlFor={attribute.name} className={kcClsx("kcLabelClass")}>
                                     {advancedMsg(attribute.displayName ?? "")}
                                 </label>
-                                {attribute.required && <> *</>}
+                                {!attribute.required && <span className="form-sublink text-muted">optional</span>}
                             </div>
                             <div className={kcClsx("kcInputWrapperClass")}>
                                 {attribute.annotations.inputHelperTextBefore !== undefined && (
