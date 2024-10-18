@@ -1,4 +1,4 @@
-import { useState, useEffect, useReducer } from "react";
+import { useState, useEffect, useReducer, useLayoutEffect } from "react";
 import { kcSanitize } from "keycloakify/lib/kcSanitize";
 import { assert } from "keycloakify/tools/assert";
 import { clsx } from "keycloakify/tools/clsx";
@@ -6,6 +6,7 @@ import type { PageProps } from "keycloakify/login/pages/PageProps";
 import { getKcClsx, type KcClsx } from "keycloakify/login/lib/kcClsx";
 import type { KcContext } from "../KcContext";
 import type { I18n } from "../i18n";
+import { initTooltips } from "../../util";
 
 export default function Login(props: PageProps<Extract<KcContext, { pageId: "login.ftl" }>, I18n>) {
     const { kcContext, i18n, doUseDefaultCss, Template, classes } = props;
@@ -13,6 +14,10 @@ export default function Login(props: PageProps<Extract<KcContext, { pageId: "log
     const { kcClsx } = getKcClsx({
         doUseDefaultCss,
         classes
+    });
+
+    useLayoutEffect(() => {
+        return initTooltips()
     });
 
     const { social, realm, url, usernameHidden, login, auth, registrationDisabled, messagesPerField } = kcContext;
@@ -62,6 +67,9 @@ export default function Login(props: PageProps<Extract<KcContext, { pageId: "log
                                             )}
                                             type="button"
                                             href={p.loginUrl}
+                                            // data-bs-toggle="tooltip"
+                                            // data-bs-placement="bottom"
+                                            // data-bs-title={kcSanitize(p.displayName)}
                                         >
                                             {p.iconClasses && <i className={clsx(kcClsx("kcCommonLogoIdP"), p.iconClasses)} aria-hidden="true"></i>}
                                             <span

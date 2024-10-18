@@ -8,7 +8,7 @@ import { useInitialize } from "keycloakify/login/Template.useInitialize";
 import type { I18n } from "./i18n";
 import type { KcContext } from "./KcContext";
 import { Icon } from '@iconify/react';
-import { Tooltip } from "bootstrap";
+import { initTooltips } from "../util";
 
 export default function Template(props: TemplateProps<KcContext, I18n>) {
     const {
@@ -32,17 +32,6 @@ export default function Template(props: TemplateProps<KcContext, I18n>) {
     const { msg, msgStr, currentLanguage, enabledLanguages } = i18n;
 
     const { auth, url, message, isAppInitiatedAction } = kcContext;
-
-    function initTooltips() {
-        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
-        console.log(tooltipTriggerList.length)
-        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl =>
-            new Tooltip(tooltipTriggerEl)
-        );
-        return () => {
-            tooltipList.forEach(tooltip => tooltip.dispose());
-        }
-    }
 
     useEffect(() => {
         document.title = documentTitle ?? msgStr("loginTitle", kcContext.realm.displayName);
