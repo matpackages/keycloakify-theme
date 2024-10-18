@@ -46,8 +46,11 @@ export default function Login(props: PageProps<Extract<KcContext, { pageId: "log
                 <>
                     {realm.password && social?.providers !== undefined && social.providers.length !== 0 && (
                         <div id="kc-social-providers" className={kcClsx("kcFormSocialAccountSectionClass")}>
-                            <hr />
-                            <h2>{msg("identity-provider-login-label")}</h2>
+                            <div className="divider mb-3 mt-4">
+                                <span className="small text-muted">
+                                    {msg("identity-provider-login-label")}
+                                </span>
+                            </div>
                             <ul className={kcClsx("kcFormSocialAccountListClass", social.providers.length > 3 && "kcFormSocialAccountListGridClass")}>
                                 {social.providers.map((...[p, , providers]) => (
                                     <li key={p.alias} className="col" >
