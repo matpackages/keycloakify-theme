@@ -235,7 +235,7 @@ export const WithSocialProviders: Story = {
                             alias: "openshift",
                             providerId: "openshift",
                             displayName: "OpenShift",
-                            iconClasses: "fa fa-cloud"
+                            iconClasses: "fa fa-redhat"
                         }
                     ]
                 }
