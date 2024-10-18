@@ -71,5 +71,9 @@ const classes = {
     kcLocaleItemClass: "dropdown-item",
     kcFormCardClass: "card-responsive p-sm-3",
     kcSignUpClass: "text-center small text-muted",
-    kcCommonLogoIdP: "fa-brands",
+    kcCommonLogoIdP: "social-icon fa-brands",
+    kcFormSocialAccountListButtonClass: "text-muted social-button",
+    kcFormSocialAccountListClass: "row gy-4 text-center no-list",
+    kcFormSocialAccountListGridClass: "row gy-4 text-center no-list",
+    kcFormSocialAccountNameClass: "display-none"
 } satisfies { [key in ClassKey]?: string };

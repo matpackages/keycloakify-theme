@@ -89,8 +89,18 @@ a:hover {
 .social-icon {
     height: 30px;
     width: 30px;
+    line-height: 30px;
+    font-size: 30px;
 }
 
 .flex-list-item {
     min-height: 100px;
+}
+
+ul.no-list {
+    margin-bottom: 0;
+    padding: 0;
+}
+ul.no-list li {
+    display: block;
 }

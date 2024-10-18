@@ -50,7 +50,7 @@ export default function Login(props: PageProps<Extract<KcContext, { pageId: "log
                             <h2>{msg("identity-provider-login-label")}</h2>
                             <ul className={kcClsx("kcFormSocialAccountListClass", social.providers.length > 3 && "kcFormSocialAccountListGridClass")}>
                                 {social.providers.map((...[p, , providers]) => (
-                                    <li key={p.alias}>
+                                    <li key={p.alias} className="col" >
                                         <a
                                             id={`social-${p.alias}`}
                                             className={kcClsx(
