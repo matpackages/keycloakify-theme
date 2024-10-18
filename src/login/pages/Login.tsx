@@ -123,6 +123,13 @@ export default function Login(props: PageProps<Extract<KcContext, { pageId: "log
                                 <label htmlFor="password" className={kcClsx("kcLabelClass")}>
                                     {msg("password")}
                                 </label>
+                                {realm.resetPasswordAllowed && (
+                                    <a tabIndex={6}
+                                        className="form-sublink"
+                                        href={url.loginResetCredentialsUrl}>
+                                        {msg("doForgotPassword")}
+                                    </a>
+                                )}
                                 <PasswordWrapper kcClsx={kcClsx} i18n={i18n} passwordInputId="password">
                                     <input
                                         tabIndex={3}
@@ -149,10 +156,11 @@ export default function Login(props: PageProps<Extract<KcContext, { pageId: "log
                             <div className={kcClsx("kcFormGroupClass", "kcFormSettingClass")}>
                                 <div id="kc-form-options">
                                     {realm.rememberMe && !usernameHidden && (
-                                        <div className="checkbox">
-                                            <label>
+                                        <div className="checkbox mb-2 form-check small">
+                                            <label className="form-check-label">
                                                 <input
                                                     tabIndex={5}
+                                                    className="form-check-input"
                                                     id="rememberMe"
                                                     name="rememberMe"
                                                     type="checkbox"
@@ -164,13 +172,7 @@ export default function Login(props: PageProps<Extract<KcContext, { pageId: "log
                                     )}
                                 </div>
                                 <div className={kcClsx("kcFormOptionsWrapperClass")}>
-                                    {realm.resetPasswordAllowed && (
-                                        <span>
-                                            <a tabIndex={6} href={url.loginResetCredentialsUrl}>
-                                                {msg("doForgotPassword")}
-                                            </a>
-                                        </span>
-                                    )}
+                                    
                                 </div>
                             </div>
 
