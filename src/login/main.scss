@@ -19,3 +19,8 @@
 .form-control[aria-invalid="true"] {
     @extend .form-control, .is-invalid
 }
+
+.menu-max-height {
+    max-height: 20rem;
+    overflow-y: scroll;
+}

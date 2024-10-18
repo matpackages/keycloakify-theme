@@ -1,4 +1,5 @@
 import "./main.scss"
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import { Suspense, lazy } from "react";
 import type { ClassKey } from "keycloakify/login";
 import type { KcContext } from "./KcContext";
@@ -64,8 +65,9 @@ const classes = {
     kcFormPasswordVisibilityButtonClass: "btn btn-outline-secondary",
     kcFormPasswordVisibilityIconShow: "fa-solid fa-eye password-visibility-icon",
     kcFormPasswordVisibilityIconHide: "fa-solid fa-eye-slash password-visibility-icon",
+    kcLocaleMainClass: "d-flex justify-content-center mb-3",
     kcLocaleDropDownClass: "dropdown",
-    kcLocaleListClass: "dropdown-menu",
+    kcLocaleListClass: "dropdown-menu dropdown-menu-end menu-max-height",
     kcLocaleItemClass: "dropdown-item",
     kcFormCardClass: "card-responsive p-sm-3",
     kcSignUpClass: "text-center small text-muted",
