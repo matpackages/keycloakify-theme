@@ -71,4 +71,5 @@ const classes = {
     kcLocaleItemClass: "dropdown-item",
     kcFormCardClass: "card-responsive p-sm-3",
     kcSignUpClass: "text-center small text-muted",
+    kcCommonLogoIdP: "fa-brands",
 } satisfies { [key in ClassKey]?: string };
