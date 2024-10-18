@@ -102,7 +102,7 @@ export default function Template(props: TemplateProps<KcContext, I18n>) {
                     </div>
                     {(() => {
                         const node = (
-                            <h1 className="text-center mt-2 lead mb-0" id="kc-page-title">{headerNode}</h1>
+                            <h1 className="text-center mt-2 lead mb-0 page-title" id="kc-page-title">{headerNode}</h1>
                         );
 
                         if (displayRequiredFields) {
