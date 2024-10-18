@@ -40,7 +40,7 @@ export default function WebauthnAuthenticate(props: PageProps<Extract<KcContext,
                     </span>
                 </div>
             }
-            headerNode={msg("webauthn-login-title")}
+            headerNode={msg("loginAccountTitle")}
         >
             <div id="kc-form-webauthn" className={kcClsx("kcFormClass")}>
                 <form id="webauth" action={url.loginAction} method="post">
@@ -51,7 +51,7 @@ export default function WebauthnAuthenticate(props: PageProps<Extract<KcContext,
                     <input type="hidden" id="userHandle" name="userHandle" />
                     <input type="hidden" id="error" name="error" />
                 </form>
-                <div className={clsx(kcClsx("kcFormGroupClass"), "no-bottom-margin")}>
+                <div className="">
                     {authenticators && (
                         <>
                             <form id="authn_select" className={kcClsx("kcFormClass")}>
@@ -122,7 +122,7 @@ export default function WebauthnAuthenticate(props: PageProps<Extract<KcContext,
                             )}
                         </>
                     )}
-                    <div id="kc-form-buttons" className={kcClsx("kcFormButtonsClass")}>
+                    <div id="kc-form-buttons" className="d-grid d-block">
                         <input
                             id={authButtonId}
                             type="button"
