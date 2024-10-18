@@ -7,6 +7,7 @@ import { useSetClassName } from "keycloakify/tools/useSetClassName";
 import { useInitialize } from "keycloakify/login/Template.useInitialize";
 import type { I18n } from "./i18n";
 import type { KcContext } from "./KcContext";
+import { Icon } from '@iconify/react';
 
 export default function Template(props: TemplateProps<KcContext, I18n>) {
     const {
@@ -160,16 +161,18 @@ export default function Template(props: TemplateProps<KcContext, I18n>) {
                         {children}
                         {auth !== undefined && auth.showTryAnotherWayLink && (
                             <form id="kc-select-try-another-way-form" action={url.loginAction} method="post">
-                                <div className={kcClsx("kcFormGroupClass")}>
+                                <div className="d-grid d-block mt-2">
                                     <input type="hidden" name="tryAnotherWay" value="on" />
                                     <a
                                         href="#"
                                         id="try-another-way"
+                                        className="btn btn-light"
                                         onClick={() => {
                                             document.forms["kc-select-try-another-way-form" as never].submit();
                                             return false;
                                         }}
                                     >
+                                        <Icon icon="octicon:passkey-fill-16" className="text-muted me-2 vfix"/>
                                         {msg("doTryAnotherWay")}
                                     </a>
                                 </div>
