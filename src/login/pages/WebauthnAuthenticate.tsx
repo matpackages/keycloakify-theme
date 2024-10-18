@@ -5,6 +5,7 @@ import { useScript } from "keycloakify/login/pages/WebauthnAuthenticate.useScrip
 import type { PageProps } from "keycloakify/login/pages/PageProps";
 import type { KcContext } from "../KcContext";
 import type { I18n } from "../i18n";
+import { Icon } from '@iconify/react';
 
 export default function WebauthnAuthenticate(props: PageProps<Extract<KcContext, { pageId: "webauthn-authenticate.ftl" }>, I18n>) {
     const { kcContext, i18n, doUseDefaultCss, Template, classes } = props;
@@ -123,13 +124,14 @@ export default function WebauthnAuthenticate(props: PageProps<Extract<KcContext,
                         </>
                     )}
                     <div id="kc-form-buttons" className="d-grid d-block">
-                        <input
+                        <button
                             id={authButtonId}
-                            type="button"
                             autoFocus
-                            value={msgStr("webauthn-doAuthenticate")}
                             className={kcClsx("kcButtonClass", "kcButtonPrimaryClass", "kcButtonBlockClass", "kcButtonLargeClass")}
-                        />
+                        >
+                            <Icon icon="octicon:passkey-fill-16" className="me-2 vfix"/>
+                            {msgStr("webauthn-doAuthenticate")}
+                        </button>
                     </div>
                 </div>
             </div>

@@ -191,7 +191,7 @@ export default function Template(props: TemplateProps<KcContext, I18n>) {
                                             return false;
                                         }}
                                     >
-                                        <Icon icon="octicon:passkey-fill-16" className="text-muted me-2 vfix"/>
+                                        <Icon icon="fa6-solid:arrow-right-arrow-left" className="text-muted me-2 vfix"/>
                                         {msg("doTryAnotherWay")}
                                     </a>
                                 </div>
