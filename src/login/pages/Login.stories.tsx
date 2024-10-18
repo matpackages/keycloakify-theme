@@ -16,6 +16,42 @@ export const Default: Story = {
     render: () => <KcPageStory />
 };
 
+export const WithOtherWayAndThreeSocialProviders: Story = {
+    render: () => (
+        <KcPageStory
+            kcContext={{
+                auth: { showTryAnotherWayLink: true },
+                social: {
+                    displayInfo: true,
+                    providers: [
+                        {
+                            loginUrl: "github",
+                            alias: "github",
+                            providerId: "github",
+                            displayName: "Github",
+                            iconClasses: "fa fa-github"
+                        },
+                        {
+                            loginUrl: "google",
+                            alias: "google",
+                            providerId: "google",
+                            displayName: "Google",
+                            iconClasses: "fa fa-google"
+                        },
+                        {
+                            loginUrl: "microsoft",
+                            alias: "microsoft",
+                            providerId: "microsoft",
+                            displayName: "Microsoft",
+                            iconClasses: "fa fa-windows"
+                        }
+                    ]
+                }
+            }}
+        />
+    )
+};
+
 export const WithInvalidCredential: Story = {
     render: () => (
         <KcPageStory
