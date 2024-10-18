@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useLayoutEffect } from "react";
 import { clsx } from "keycloakify/tools/clsx";
 import { kcSanitize } from "keycloakify/lib/kcSanitize";
 import type { TemplateProps } from "keycloakify/login/TemplateProps";
@@ -8,6 +8,7 @@ import { useInitialize } from "keycloakify/login/Template.useInitialize";
 import type { I18n } from "./i18n";
 import type { KcContext } from "./KcContext";
 import { Icon } from '@iconify/react';
+import { Tooltip } from "bootstrap";
 
 export default function Template(props: TemplateProps<KcContext, I18n>) {
     const {
@@ -32,9 +33,24 @@ export default function Template(props: TemplateProps<KcContext, I18n>) {
 
     const { auth, url, message, isAppInitiatedAction } = kcContext;
 
+    function initTooltips() {
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+        console.log(tooltipTriggerList.length)
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl =>
+            new Tooltip(tooltipTriggerEl)
+        );
+        return () => {
+            tooltipList.forEach(tooltip => tooltip.dispose());
+        }
+    }
+
     useEffect(() => {
         document.title = documentTitle ?? msgStr("loginTitle", kcContext.realm.displayName);
     }, []);
+
+    useLayoutEffect(() => {
+        return initTooltips()
+    });
 
     useSetClassName({
         qualifiedName: "html",
@@ -95,18 +111,8 @@ export default function Template(props: TemplateProps<KcContext, I18n>) {
                         <img src="/favicon.svg" alt="Logo" width="48" height="48" />
                     </div>
                     {(() => {
-                        const node = !(auth !== undefined && auth.showUsername && !auth.showResetCredentials) ? (
+                        const node = (
                             <h1 className="text-center mt-2 lead mb-0" id="kc-page-title">{headerNode}</h1>
-                        ) : (
-                            <div id="kc-username" className={kcClsx("kcFormGroupClass")}>
-                                <label id="kc-attempted-username">{auth.attemptedUsername}</label>
-                                <a id="reset-login" href={url.loginRestartFlowUrl} aria-label={msgStr("restartLoginTooltip")}>
-                                    <div className="kc-login-tooltip">
-                                        <i className={kcClsx("kcResetFlowIcon")}></i>
-                                        <span className="kc-tooltip-text">{msg("restartLoginTooltip")}</span>
-                                    </div>
-                                </a>
-                            </div>
                         );
 
                         if (displayRequiredFields) {
@@ -160,6 +166,27 @@ export default function Template(props: TemplateProps<KcContext, I18n>) {
                 )}
                 <div id="kc-content">
                     <div id="kc-content-wrapper" className={kcClsx("kcFormCardClass")}>
+                        {!(auth !== undefined && auth.showUsername && !auth.showResetCredentials) ? (
+                            undefined
+                        ) : (
+                            <div id="kc-username" className={kcClsx("kcFormGroupClass", "kcInputGroup")}>
+                                <input id="kc-attempted-username" className="form-control" type="text" value={auth.attemptedUsername} disabled />
+                                <a id="reset-login"
+                                    className="btn btn-light btn-restart text-muted"
+                                    href={url.loginRestartFlowUrl}
+                                    aria-label={msgStr("restartLoginTooltip")}
+                                    data-bs-toggle="tooltip"
+                                    data-bs-placement="top"
+                                    data-bs-title={msgStr("restartLoginTooltip")}
+                                >
+                                    <div className="kc-login-tooltip">
+                                        <i className={kcClsx("kcResetFlowIcon")}></i>
+                                        <span className="kc-tooltip-text display-none">{msg("restartLoginTooltip")}</span>
+                                    </div>
+                                </a>
+                            </div>
+                        )
+                        }
                         {children}
                         {auth !== undefined && auth.showTryAnotherWayLink && (
                             <form id="kc-select-try-another-way-form" action={url.loginAction} method="post">

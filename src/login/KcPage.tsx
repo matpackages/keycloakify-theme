@@ -81,4 +81,5 @@ const classes = {
     kcFeedbackSuccessIcon: "fa-solid fa-check me-2",
     kcFeedbackWarningIcon:"fa-solid fa-triangle-exclamation me-2",
     kcFeedbackInfoIcon: "fa-solid fa-circle-info me-2",
+    kcResetFlowIcon: "fa-solid fa-rotate-left restart-login-icon",
 } satisfies { [key in ClassKey]?: string };
