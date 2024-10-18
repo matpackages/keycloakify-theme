@@ -29,21 +29,21 @@ export const WithOtherWayAndThreeSocialProviders: Story = {
                             alias: "github",
                             providerId: "github",
                             displayName: "Github",
-                            iconClasses: "fa-brands fa-github"
+                            iconClasses: "fa fa-github"
                         },
                         {
                             loginUrl: "google",
                             alias: "google",
                             providerId: "google",
                             displayName: "Google",
-                            iconClasses: "fa-brands fa-google"
+                            iconClasses: "fa fa-google"
                         },
                         {
                             loginUrl: "microsoft",
                             alias: "microsoft",
                             providerId: "microsoft",
                             displayName: "Microsoft",
-                            iconClasses: "fa-brands fa-microsoft"
+                            iconClasses: "fa fa-windows"
                         }
                     ]
                 }
@@ -158,77 +158,77 @@ export const WithSocialProviders: Story = {
                             alias: "google",
                             providerId: "google",
                             displayName: "Google",
-                            iconClasses: "fa-brands fa-google"
+                            iconClasses: "fa fa-google"
                         },
                         {
                             loginUrl: "microsoft",
                             alias: "microsoft",
                             providerId: "microsoft",
                             displayName: "Microsoft",
-                            iconClasses: "fa-brands fa-microsoft"
+                            iconClasses: "fa fa-windows"
                         },
                         {
                             loginUrl: "facebook",
                             alias: "facebook",
                             providerId: "facebook",
                             displayName: "Facebook",
-                            iconClasses: "fa-brands fa-facebook"
+                            iconClasses: "fa fa-facebook"
                         },
                         {
                             loginUrl: "instagram",
                             alias: "instagram",
                             providerId: "instagram",
                             displayName: "Instagram",
-                            iconClasses: "fa-brands fa-instagram"
+                            iconClasses: "fa fa-instagram"
                         },
                         {
                             loginUrl: "twitter",
                             alias: "twitter",
                             providerId: "twitter",
                             displayName: "Twitter",
-                            iconClasses: "fa-brands fa-twitter"
+                            iconClasses: "fa fa-twitter"
                         },
                         {
                             loginUrl: "linkedin",
                             alias: "linkedin",
                             providerId: "linkedin",
                             displayName: "LinkedIn",
-                            iconClasses: "fa-brands fa-linkedin"
+                            iconClasses: "fa fa-linkedin"
                         },
                         {
                             loginUrl: "stackoverflow",
                             alias: "stackoverflow",
                             providerId: "stackoverflow",
                             displayName: "Stackoverflow",
-                            iconClasses: "fa-brands fa-stack-overflow"
+                            iconClasses: "fa fa-stack-overflow"
                         },
                         {
                             loginUrl: "github",
                             alias: "github",
                             providerId: "github",
                             displayName: "Github",
-                            iconClasses: "fa-brands fa-github"
+                            iconClasses: "fa fa-github"
                         },
                         {
                             loginUrl: "gitlab",
                             alias: "gitlab",
                             providerId: "gitlab",
                             displayName: "Gitlab",
-                            iconClasses: "fa-brands fa-gitlab"
+                            iconClasses: "fa fa-gitlab"
                         },
                         {
                             loginUrl: "bitbucket",
                             alias: "bitbucket",
                             providerId: "bitbucket",
                             displayName: "Bitbucket",
-                            iconClasses: "fa-brands fa-bitbucket"
+                            iconClasses: "fa fa-bitbucket"
                         },
                         {
                             loginUrl: "paypal",
                             alias: "paypal",
                             providerId: "paypal",
                             displayName: "PayPal",
-                            iconClasses: "fa-brands fa-paypal"
+                            iconClasses: "fa fa-paypal"
                         },
                         {
                             loginUrl: "openshift",
@@ -280,7 +280,7 @@ export const WithOneSocialProvider: Story = {
                             alias: "google",
                             providerId: "google",
                             displayName: "Google",
-                            iconClasses: "fa-brands fa-google"
+                            iconClasses: "fa fa-google"
                         }
                     ]
                 }
@@ -302,14 +302,14 @@ export const WithTwoSocialProviders: Story = {
                             alias: "google",
                             providerId: "google",
                             displayName: "Google",
-                            iconClasses: "fa-brands fa-google"
+                            iconClasses: "fa fa-google"
                         },
                         {
                             loginUrl: "microsoft",
                             alias: "microsoft",
                             providerId: "microsoft",
                             displayName: "Microsoft",
-                            iconClasses: "fa-brands fa-microsoft"
+                            iconClasses: "fa fa-windows"
                         }
                     ]
                 }
@@ -343,28 +343,28 @@ export const WithMoreThanTwoSocialProviders: Story = {
                             alias: "google",
                             providerId: "google",
                             displayName: "Google",
-                            iconClasses: "fa-brands fa-google"
+                            iconClasses: "fa fa-google"
                         },
                         {
                             loginUrl: "microsoft",
                             alias: "microsoft",
                             providerId: "microsoft",
                             displayName: "Microsoft",
-                            iconClasses: "fa-brands fa-microsoft"
+                            iconClasses: "fa fa-windows"
                         },
                         {
                             loginUrl: "facebook",
                             alias: "facebook",
                             providerId: "facebook",
                             displayName: "Facebook",
-                            iconClasses: "fa-brands fa-facebook"
+                            iconClasses: "fa fa-facebook"
                         },
                         {
                             loginUrl: "twitter",
                             alias: "twitter",
                             providerId: "twitter",
                             displayName: "Twitter",
-                            iconClasses: "fa-brands fa-twitter"
+                            iconClasses: "fa fa-twitter"
                         }
                     ]
                 }
@@ -385,7 +385,7 @@ export const WithSocialProvidersAndWithoutRememberMe: Story = {
                             alias: "google",
                             providerId: "google",
                             displayName: "Google",
-                            iconClasses: "fa-brands fa-google"
+                            iconClasses: "fa fa-google"
                         }
                     ]
                 },
