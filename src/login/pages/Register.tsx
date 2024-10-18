@@ -38,6 +38,8 @@ export default function Register(props: RegisterProps) {
             headerNode={messageHeader !== undefined ? advancedMsg(messageHeader) : msg("registerTitle")}
             displayMessage={messagesPerField.exists("global")}
             displayRequiredFields
+            displayInfo={true}
+            infoNode={<span>Already have an account? <a href={url.loginUrl}>Sign in</a></span>}
         >
             <form id="kc-register-form" className={kcClsx("kcFormClass")} action={url.registrationAction} method="post">
                 <UserProfileFormFields
@@ -91,13 +93,6 @@ export default function Register(props: RegisterProps) {
                             />
                         </div>
                     )}
-                    <div id="kc-form-options" className={kcClsx("kcFormOptionsClass")}>
-                        <div className={kcClsx("kcFormOptionsWrapperClass")}>
-                            <div className="d-grid d-block mt-2">
-                                <a href={url.loginUrl} className="btn btn-light">{msg("backToLogin")}</a>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </form>
         </Template>
