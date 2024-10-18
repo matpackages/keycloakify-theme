@@ -117,6 +117,6 @@ const classes = {
     kcAuthenticatorDefaultClass: "fa-solid fa-list",
     kcAuthenticatorPasswordClass: "fa-solid fa-lock",
     kcAuthenticatorOTPClass: "fa-solid fa-mobile-screen",
-    kcAuthenticatorWebAuthnClass: "fa-solid fa-user",
-    kcAuthenticatorWebAuthnPasswordlessClass: "fa-solid fa-user",
+    kcAuthenticatorWebAuthnClass: "octicon octicon-passkey-fill-24 vfix",
+    kcAuthenticatorWebAuthnPasswordlessClass: "octicon octicon-passkey-fill-24 vfix",
 } satisfies { [key in ClassKey]?: string };
