@@ -108,5 +108,15 @@ const classes = {
     kcFeedbackWarningIcon:"fa-solid fa-triangle-exclamation me-2",
     kcFeedbackInfoIcon: "fa-solid fa-circle-info me-2",
     kcResetFlowIcon: "fa-solid fa-rotate-left restart-login-icon",
-    kcFormButtonsClass: "d-grid d-block mt-3"
+    kcFormButtonsClass: "d-grid d-block mt-3",
+    kcSelectAuthListClass: "list-group",
+    kcSelectAuthListItemClass: "list-group-item list-group-item-action flex-list-item d-flex flex-row py-3",
+    kcSelectAuthListItemHeadingClass: "h5 mb-1",
+    kcSelectAuthListItemDescriptionClass: "mb-1 me-2 text-muted",
+    kcSelectAuthListItemIconPropertyClass: "mx-2 text-muted",
+    kcAuthenticatorDefaultClass: "fa-solid fa-list",
+    kcAuthenticatorPasswordClass: "fa-solid fa-lock",
+    kcAuthenticatorOTPClass: "fa-solid fa-mobile-screen",
+    kcAuthenticatorWebAuthnClass: "fa-solid fa-user",
+    kcAuthenticatorWebAuthnPasswordlessClass: "fa-solid fa-user",
 } satisfies { [key in ClassKey]?: string };

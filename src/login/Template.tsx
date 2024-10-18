@@ -155,7 +155,7 @@ export default function Template(props: TemplateProps<KcContext, I18n>) {
                     </div>
                 )}
                 <div id="kc-content">
-                    <div id="kc-content-wrapper" className={kcClsx("kcFormCardClass")}>
+                    <div id="kc-content-wrapper" className={kcContext.pageId != "select-authenticator.ftl" ? kcClsx("kcFormCardClass") : ""}>
                         {!(auth !== undefined && auth.showUsername && !auth.showResetCredentials) ? (
                             undefined
                         ) : (
