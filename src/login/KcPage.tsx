@@ -90,4 +90,5 @@ const classes = {
     kcFeedbackWarningIcon:"fa-solid fa-triangle-exclamation me-2",
     kcFeedbackInfoIcon: "fa-solid fa-circle-info me-2",
     kcResetFlowIcon: "fa-solid fa-rotate-left restart-login-icon",
+    kcFormButtonsClass: "d-grid d-block mt-3"
 } satisfies { [key in ClassKey]?: string };
