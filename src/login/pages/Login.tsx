@@ -183,7 +183,6 @@ export default function Login(props: PageProps<Extract<KcContext, { pageId: "log
                                     )}
                                 </div>
                                 <div className={kcClsx("kcFormOptionsWrapperClass")}>
-                                    
                                 </div>
                             </div>
 
