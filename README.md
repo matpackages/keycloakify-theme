@@ -45,7 +45,7 @@ npx keycloakify eject-page
 
 Will add the page to your codebase.
 
-Ejected pages: `Template.tsx`, `login.ftl`
+Ejected pages: `Template.tsx`, `login.ftl`, `login-reset-password.ftl`
 
 # Building the theme
 
