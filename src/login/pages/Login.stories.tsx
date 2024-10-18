@@ -259,8 +259,48 @@ export const WithErrorMessage: Story = {
         <KcPageStory
             kcContext={{
                 message: {
-                    summary: "The time allotted for the connection has elapsed.<br/>The login process will restart from the beginning.",
+                    summary: "Your login attempt timed out. Login will start from the beginning.",
                     type: "error"
+                }
+            }}
+        />
+    )
+};
+
+
+export const WithInfoMessage: Story = {
+    render: () => (
+        <KcPageStory
+            kcContext={{
+                message: {
+                    summary: "Your login attempt timed out. Login will start from the beginning.",
+                    type: "info"
+                }
+            }}
+        />
+    )
+};
+
+export const WithWarningMessage: Story = {
+    render: () => (
+        <KcPageStory
+            kcContext={{
+                message: {
+                    summary: "Your login attempt timed out. Login will start from the beginning.",
+                    type: "warning"
+                }
+            }}
+        />
+    )
+};
+
+export const WithSuccessMessage: Story = {
+    render: () => (
+        <KcPageStory
+            kcContext={{
+                message: {
+                    summary: "Your login attempt timed out. Login will start from the beginning.",
+                    type: "success"
                 }
             }}
         />

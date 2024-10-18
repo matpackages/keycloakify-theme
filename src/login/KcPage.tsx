@@ -75,5 +75,10 @@ const classes = {
     kcFormSocialAccountListButtonClass: "text-muted social-button",
     kcFormSocialAccountListClass: "row gy-4 text-center no-list",
     kcFormSocialAccountListGridClass: "row gy-4 text-center no-list",
-    kcFormSocialAccountNameClass: "display-none"
+    kcFormSocialAccountNameClass: "display-none",
+    kcAlertClass: "alert d-flex align-items-baseline",
+    kcFeedbackErrorIcon: "fa-solid fa-triangle-exclamation me-2",
+    kcFeedbackSuccessIcon: "fa-solid fa-check me-2",
+    kcFeedbackWarningIcon:"fa-solid fa-triangle-exclamation me-2",
+    kcFeedbackInfoIcon: "fa-solid fa-circle-info me-2",
 } satisfies { [key in ClassKey]?: string };

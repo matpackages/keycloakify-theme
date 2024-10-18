@@ -133,31 +133,33 @@ export default function Template(props: TemplateProps<KcContext, I18n>) {
                         </div>
                     )}
                 </header>
+                {/* App-initiated actions should not see warning messages about the need to complete the action during login. */}
+                {displayMessage && message !== undefined && (message.type !== "warning" || !isAppInitiatedAction) && (
+                    <div
+                        className={clsx(
+                            kcClsx("kcAlertClass"),
+                            `alert-${
+                                message?.type === "error" ? "danger" : 
+                                message?.type === "info" ? "primary" : message.type
+                            }`,
+                        )}
+                    >
+                        <div className="pf-c-alert__icon">
+                            {message.type === "success" && <span className={kcClsx("kcFeedbackSuccessIcon")}></span>}
+                            {message.type === "warning" && <span className={kcClsx("kcFeedbackWarningIcon")}></span>}
+                            {message.type === "error" && <span className={kcClsx("kcFeedbackErrorIcon")}></span>}
+                            {message.type === "info" && <span className={kcClsx("kcFeedbackInfoIcon")}></span>}
+                        </div>
+                        <span
+                            className={kcClsx("kcAlertTitleClass")}
+                            dangerouslySetInnerHTML={{
+                                __html: kcSanitize(message.summary)
+                            }}
+                        />
+                    </div>
+                )}
                 <div id="kc-content">
                     <div id="kc-content-wrapper" className={kcClsx("kcFormCardClass")}>
-                        {/* App-initiated actions should not see warning messages about the need to complete the action during login. */}
-                        {displayMessage && message !== undefined && (message.type !== "warning" || !isAppInitiatedAction) && (
-                            <div
-                                className={clsx(
-                                    `alert-${message.type}`,
-                                    kcClsx("kcAlertClass"),
-                                    `pf-m-${message?.type === "error" ? "danger" : message.type}`
-                                )}
-                            >
-                                <div className="pf-c-alert__icon">
-                                    {message.type === "success" && <span className={kcClsx("kcFeedbackSuccessIcon")}></span>}
-                                    {message.type === "warning" && <span className={kcClsx("kcFeedbackWarningIcon")}></span>}
-                                    {message.type === "error" && <span className={kcClsx("kcFeedbackErrorIcon")}></span>}
-                                    {message.type === "info" && <span className={kcClsx("kcFeedbackInfoIcon")}></span>}
-                                </div>
-                                <span
-                                    className={kcClsx("kcAlertTitleClass")}
-                                    dangerouslySetInnerHTML={{
-                                        __html: kcSanitize(message.summary)
-                                    }}
-                                />
-                            </div>
-                        )}
                         {children}
                         {auth !== undefined && auth.showTryAnotherWayLink && (
                             <form id="kc-select-try-another-way-form" action={url.loginAction} method="post">
