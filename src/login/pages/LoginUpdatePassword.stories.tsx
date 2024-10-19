@@ -15,3 +15,9 @@ type Story = StoryObj<typeof meta>;
 export const Default: Story = {
     render: () => <KcPageStory />
 };
+
+export const AppInitiated: Story = {
+    render: () => <KcPageStory 
+        kcContext={{isAppInitiatedAction: true}}
+    />
+};
