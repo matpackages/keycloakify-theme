@@ -22,8 +22,6 @@ npx keycloakify add-story
 npm run storybook
 ```
 
-Added stories: `login.ftl`, `register.ftl`, `login-reset-password.ftl`, `select-authenticator.ftl`, `webauthn-authenticate.ftl`
-
 Check [Storybook](https://storybook.keycloakify.dev/?path=/story/login-login-ftl--default) for a preview of all available stories.
 
 # How to customize the theme
@@ -44,9 +42,6 @@ npx keycloakify eject-page
 ```
 
 Will add the page to your codebase.
-
-Ejected pages: `Template.tsx`, `login.ftl`, `login-reset-password.ftl`, `register.ftl`,
-`UserProfileFormFields.tsx`, `webauthn-authenticate.ftl`
 
 # Building the theme
 
