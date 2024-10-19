@@ -24,7 +24,7 @@ export const WithAnotherWay: Story = {
     />
 };
 
-export const WithPrefilledUser: Story = {
+export const WithPresetUser: Story = {
     render: () => <KcPageStory
         kcContext={{
             auth: {

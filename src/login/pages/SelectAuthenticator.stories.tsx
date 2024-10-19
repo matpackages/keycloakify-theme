@@ -16,6 +16,17 @@ export const Default: Story = {
     render: () => <KcPageStory />
 };
 
+export const WithPresetUser: Story = {
+    render: () => <KcPageStory 
+        kcContext={{
+            auth: {
+                attemptedUsername: "max.mustermann@mail.com",
+                showUsername: true,
+            },
+        }}
+    />
+};
+
 export const WithDifferentAuthenticationMethods: Story = {
     render: () => (
         <KcPageStory
