@@ -111,3 +111,41 @@ ul.no-list {
 ul.no-list li {
     display: block;
 }
+
+.password-visibility-icon {
+    width: 20px;
+}
+.restart-login-icon {
+    width: 20px;
+}
+
+.invalid-feedback {
+    display: block;
+}
+
+.locale-dropdown-button {
+    @extend .btn;
+    @extend .btn-light;
+    @extend .dropdown-toggle;
+}
+
+.form-control[aria-invalid="true"] {
+    @extend .form-control, .is-invalid
+}
+
+.menu-max-height {
+    max-height: 20rem;
+    overflow-y: scroll;
+}
+
+.vfix {
+    vertical-align: -.125em;
+}
+
+.display-none {
+    display: none;
+}
+
+.select-login-text {
+    font-weight: normal;
+}

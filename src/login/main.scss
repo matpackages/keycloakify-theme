@@ -2,37 +2,3 @@
 @import "@fortawesome/fontawesome-free/css/all.css";
 @import "octicons-css/octicons.min.css";
 @import "./style.scss";
-
-.password-visibility-icon {
-    width: 20px;
-}
-.restart-login-icon {
-    width: 20px;
-}
-
-.invalid-feedback {
-    display: block;
-}
-
-.locale-dropdown-button {
-    @extend .btn;
-    @extend .btn-light;
-    @extend .dropdown-toggle;
-}
-
-.form-control[aria-invalid="true"] {
-    @extend .form-control, .is-invalid
-}
-
-.menu-max-height {
-    max-height: 20rem;
-    overflow-y: scroll;
-}
-
-.vfix {
-    vertical-align: -.125em;
-}
-
-.display-none {
-    display: none;
-}
