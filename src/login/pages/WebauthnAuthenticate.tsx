@@ -14,7 +14,7 @@ export default function WebauthnAuthenticate(props: PageProps<Extract<KcContext,
 
     const { url, realm, registrationDisabled, authenticators, shouldDisplayAuthenticators } = kcContext;
 
-    const { msg, msgStr, advancedMsg } = i18n;
+    const { msg, msgStr, advancedMsg, advancedMsgStr } = i18n;
 
     const authButtonId = "authenticateWebAuthnButton";
 
@@ -66,9 +66,9 @@ export default function WebauthnAuthenticate(props: PageProps<Extract<KcContext,
                                     {authenticators.authenticators.length > 1 && (
                                         <p className={kcClsx("kcSelectAuthListItemTitle")}>{msg("webauthn-available-authenticators")}</p>
                                     )}
-                                    <div className={kcClsx("kcFormOptionsClass")}>
+                                    <div className={clsx(kcClsx("kcFormOptionsClass"),"list-group", "mb-3")}>
                                         {authenticators.authenticators.map((authenticator, i) => (
-                                            <div key={i} id={`kc-webauthn-authenticator-item-${i}`} className={kcClsx("kcSelectAuthListItemClass")}>
+                                            <div key={i} id={`kc-webauthn-authenticator-item-${i}`} className={clsx(kcClsx("kcSelectAuthListItemClass"), "webauthn-no-action")}>
                                                 <div className={kcClsx("kcSelectAuthListItemIconClass")}>
                                                     <i
                                                         className={clsx(
@@ -102,14 +102,14 @@ export default function WebauthnAuthenticate(props: PageProps<Extract<KcContext,
                                                                 }))
                                                                 .map(({ displayNameProperty, hasNext }) => (
                                                                     <Fragment key={displayNameProperty}>
-                                                                        {advancedMsg(displayNameProperty)}
+                                                                        {advancedMsgStr(displayNameProperty)}
                                                                         {hasNext && <span>, </span>}
                                                                     </Fragment>
                                                                 ))}
                                                         </div>
                                                     )}
                                                     <div className={kcClsx("kcSelectAuthListItemDescriptionClass")}>
-                                                        <span id={`kc-webauthn-authenticator-createdlabel-${i}`}>
+                                                        <span id={`kc-webauthn-authenticator-createdlabel-${i}`} className="me-1">
                                                             {msg("webauthn-createdAt-label")}
                                                         </span>
                                                         <span id={`kc-webauthn-authenticator-created-${i}`}>{authenticator.createdAt}</span>

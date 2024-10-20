@@ -136,4 +136,6 @@ const classes = {
     kcLoginOTPListItemIconClass: "octicon octicon-device-mobile-16 vfix-radio me-1",
     kcLoginOTPListInputClass: "btn-check",
     kcLoginOTPListClass: "btn btn-outline-secondary",
+    kcWebAuthnDefaultIcon: "octicon octicon-key-16 vfix-list",
+    kcSelectAuthListItemTitle: "form-label",
 } satisfies { [key in ClassKey]?: string };

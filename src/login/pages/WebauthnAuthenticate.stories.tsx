@@ -219,7 +219,6 @@ export const WithPresetUserAndTwoKeys: Story = {
                         credentialId: "asdf",
                         transports: {
                             iconClass: "fa-solid fa-key",
-                            displayNameProperties: ["a", "b"],
                         },
                         label: "my-passkey",
                         createdAt: "Oct 7, 2024, 6:02 PM",
@@ -228,7 +227,7 @@ export const WithPresetUserAndTwoKeys: Story = {
                         credentialId: "asdf2",
                         transports: {
                             iconClass: "fa-solid fa-key",
-                            displayNameProperties: ["a2", "b2"],
+                            displayNameProperties: [""],
                         },
                         label: "my-passkey2",
                         createdAt: "Oct 8, 2024, 6:02 PM",
