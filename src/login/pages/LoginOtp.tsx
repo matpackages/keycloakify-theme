@@ -1,5 +1,6 @@
 import { Fragment } from "react";
 import { getKcClsx } from "keycloakify/login/lib/kcClsx";
+import { clsx } from "keycloakify/tools/clsx";
 import { kcSanitize } from "keycloakify/lib/kcSanitize";
 import type { PageProps } from "keycloakify/login/pages/PageProps";
 import type { KcContext } from "../KcContext";
@@ -29,7 +30,10 @@ export default function LoginOtp(props: PageProps<Extract<KcContext, { pageId: "
             <form id="kc-otp-login-form" className={kcClsx("kcFormClass")} action={url.loginAction} method="post">
                 {otpLogin.userOtpCredentials.length > 1 && (
                     <div className={kcClsx("kcFormGroupClass")}>
-                        <div className={kcClsx("kcInputWrapperClass")}>
+                        <label htmlFor="otp" className={kcClsx("kcLabelClass")}>
+                            Select authenticator
+                        </label>
+                        <div className={clsx(kcClsx("kcInputWrapperClass"), "btn-group-vertical", "w-100")}>
                             {otpLogin.userOtpCredentials.map((otpCredential, index) => (
                                 <Fragment key={index}>
                                     <input

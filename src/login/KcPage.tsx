@@ -135,5 +135,5 @@ const classes = {
     kcCheckboxInputClass: "form-check-input me-2",
     kcLoginOTPListItemIconClass: "octicon octicon-device-mobile-16 vfix-radio me-1",
     kcLoginOTPListInputClass: "btn-check",
-    kcLoginOTPListClass: "btn btn-outline-primary",
+    kcLoginOTPListClass: "btn btn-outline-secondary",
 } satisfies { [key in ClassKey]?: string };
