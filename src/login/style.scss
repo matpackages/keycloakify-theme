@@ -141,6 +141,9 @@ ul.no-list li {
 .vfix {
     vertical-align: -.125em;
 }
+.vfix-list {
+    margin-top: -0.25em;
+}
 
 .display-none {
     display: none;
@@ -148,4 +151,8 @@ ul.no-list li {
 
 .select-login-text {
     font-weight: normal;
+}
+
+.auth-list-icon {
+    font-size: 1.25rem;
 }

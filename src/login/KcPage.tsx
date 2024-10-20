@@ -113,10 +113,10 @@ const classes = {
     kcSelectAuthListItemClass: "list-group-item list-group-item-action flex-list-item d-flex flex-row py-3",
     kcSelectAuthListItemHeadingClass: "h5 mb-1",
     kcSelectAuthListItemDescriptionClass: "mb-1 me-2 text-muted select-login-text",
-    kcSelectAuthListItemIconPropertyClass: "mx-2 text-muted",
+    kcSelectAuthListItemIconPropertyClass: "mx-2 text-muted auth-list-icon",
     kcAuthenticatorDefaultClass: "fa-solid fa-lock",
     kcAuthenticatorPasswordClass: "fa-solid fa-lock",
     kcAuthenticatorOTPClass: "fa-solid fa-mobile-screen",
-    kcAuthenticatorWebAuthnClass: "octicon octicon-passkey-fill-24 vfix",
-    kcAuthenticatorWebAuthnPasswordlessClass: "octicon octicon-passkey-fill-24 vfix",
+    kcAuthenticatorWebAuthnClass: "octicon octicon-passkey-fill-24 vfix-list",
+    kcAuthenticatorWebAuthnPasswordlessClass: "octicon octicon-passkey-fill-24 vfix-list",
 } satisfies { [key in ClassKey]?: string };
