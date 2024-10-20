@@ -158,5 +158,16 @@ ul.no-list li {
 }
 
 select.form-control {
-    @extend .form-select
+    @extend .form-select;
+}
+
+/* Fix style of checkbox "Sign out from other devices" */
+#kc-form-options .checkbox {
+    @extend .form-check, .small, .my-3;
+    input {
+        @extend .form-check-input;
+    }
+    label {
+        @extend .form-check-label, .text-muted;
+    }
 }
