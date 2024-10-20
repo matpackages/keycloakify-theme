@@ -178,7 +178,7 @@ export const WithPresetUser: Story = {
     />
 };
 
-export const WithPrefilledUserAndOneKey: Story = {
+export const WithPresetUserAndOneKey: Story = {
     render: () => <KcPageStory
         kcContext={{
             auth: {
@@ -204,7 +204,7 @@ export const WithPrefilledUserAndOneKey: Story = {
     />
 };
 
-export const WithPrefilledUserAndTwoKeys: Story = {
+export const WithPresetUserAndTwoKeys: Story = {
     render: () => <KcPageStory
         kcContext={{
             auth: {
