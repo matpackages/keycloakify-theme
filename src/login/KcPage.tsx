@@ -116,7 +116,7 @@ const classes = {
     kcSelectAuthListItemIconPropertyClass: "mx-2 text-muted auth-list-icon",
     kcAuthenticatorDefaultClass: "fa-solid fa-lock",
     kcAuthenticatorPasswordClass: "fa-solid fa-lock",
-    kcAuthenticatorOTPClass: "fa-solid fa-mobile-screen",
+    kcAuthenticatorOTPClass: "octicon octicon-device-mobile-16 vfix-list",
     kcAuthenticatorWebAuthnClass: "octicon octicon-passkey-fill-24 vfix-list",
     kcAuthenticatorWebAuthnPasswordlessClass: "octicon octicon-passkey-fill-24 vfix-list",
 } satisfies { [key in ClassKey]?: string };
