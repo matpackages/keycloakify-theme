@@ -248,3 +248,11 @@ button#updateProfile, button#linkAccount {
 #kc-info-message p:last-child {
     margin-bottom: 0;
 }
+
+// Delete credential buttons
+form.form-actions  {
+    input#kc-accept, input#kc-decline {
+        width: 100%;
+        margin-top: 0.5rem;
+    }
+}
