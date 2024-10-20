@@ -166,7 +166,7 @@ select.form-control {
 
 /* Fix style of checkbox "Sign out from other devices" */
 #kc-form-options .checkbox {
-    @extend .form-check, .small, .my-3;
+    @extend .form-check, .small, .mb-3;
     input {
         @extend .form-check-input;
     }
