@@ -171,3 +171,53 @@ select.form-control {
         @extend .form-check-label, .text-muted;
     }
 }
+
+#kc-totp-settings li p div {
+    display: inline;
+}
+#kc-totp-settings li::marker {
+    @extend .text-muted;
+}
+#kc-totp-supported-apps {
+    @extend .mb-3;
+    list-style: none;
+    padding-left: 0;
+}
+#kc-totp-settings ul {
+    list-style: none;
+    padding-left: 0;
+}
+#saveTOTPBtn {
+    width: 100%;
+}
+#cancelTOTPBtn {
+    @extend .mt-2;
+    width: 100%;
+}
+
+.required {
+    display: none;
+}
+
+// Ordered list style showing numbers in circle for "Setup OTP" page
+ol {
+    counter-reset: ordered-list-item-counter
+}
+ol > li {
+    counter-increment: ordered-list-item-counter;
+    list-style:none
+}
+ol > li:before {
+    content: counter(ordered-list-item-counter);
+    float: left;
+    width: calc(1.5rem - 2px);
+    margin-left: -2rem;
+    margin-top: 1px;
+    font-size: 14px;
+    line-height: calc(1.5rem - 2px);
+    font-weight: 500;
+    text-align: center;
+    background-color: var(--bs-body-color);
+    color: var(--bs-body-bg);
+    border-radius: 50%;
+}
