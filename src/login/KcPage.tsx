@@ -119,4 +119,9 @@ const classes = {
     kcAuthenticatorOTPClass: "octicon octicon-device-mobile-16 vfix-list",
     kcAuthenticatorWebAuthnClass: "octicon octicon-passkey-fill-24 vfix-list",
     kcAuthenticatorWebAuthnPasswordlessClass: "octicon octicon-passkey-fill-24 vfix-list",
+    kcInputHelperTextBeforeClass: "text-muted small",
+    kcInputClassCheckbox: "form-check small",
+    kcInputClassCheckboxInput: "form-check-input",
+    kcInputClassCheckboxLabel: "form-check-label",
+    kcCheckboxInputClass: "form-check-input me-2",
 } satisfies { [key in ClassKey]?: string };

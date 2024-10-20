@@ -156,3 +156,7 @@ ul.no-list li {
 .auth-list-icon {
     font-size: 1.25rem;
 }
+
+select.form-control {
+    @extend .form-select
+}
