@@ -228,3 +228,7 @@ ol > li:before {
 .webauthn-no-action:hover, .webauthn-no-action:active, .webauthn-no-action:focus {
     background-color: var(--bs-list-group-bg);;
 }
+
+button#updateProfile, button#linkAccount {
+    margin-top: 0.5rem;
+}

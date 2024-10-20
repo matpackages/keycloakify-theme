@@ -89,7 +89,7 @@ const classes = {
     kcFormHeaderClass: "mb-3",
     kcButtonPrimaryClass: "btn-primary",
     kcButtonDefaultClass: "btn-light",
-    kcButtonBlockClass: "",
+    kcButtonBlockClass: "w-100",
     kcButtonClass: "btn",
     kcButtonLargeClass: "",
     kcFormGroupClass: "mb-2",
