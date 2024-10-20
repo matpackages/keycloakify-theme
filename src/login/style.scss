@@ -236,3 +236,15 @@ button#updateProfile, button#linkAccount {
 #cancelWebAuthnAIA {
     margin-top: 0.5rem;
 }
+
+#backToApplication {
+    @extend .btn, .btn-primary, .w-100;
+}
+
+#kc-error-message p:last-child {
+    margin-bottom: 0;
+}
+
+#kc-info-message p:last-child {
+    margin-bottom: 0;
+}
