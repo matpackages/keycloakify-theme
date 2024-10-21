@@ -105,7 +105,7 @@ const classes = {
     kcInputClass: "form-control",
     kcInputErrorMessageClass: "invalid-feedback",
     kcInputGroup: "input-group",
-    kcFormPasswordVisibilityButtonClass: "btn btn-outline-secondary",
+    kcFormPasswordVisibilityButtonClass: "btn btn-outline-secondary btn-password-visibility",
     kcFormPasswordVisibilityIconShow: "fa-solid fa-eye password-visibility-icon",
     kcFormPasswordVisibilityIconHide: "fa-solid fa-eye-slash password-visibility-icon",
     kcLocaleMainClass: "d-flex justify-content-center mb-3",
