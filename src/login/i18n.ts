@@ -10,7 +10,7 @@ const { useI18n, ofTypeI18n } = i18nBuilder
             registerTitle: "Register at <strong>matpackages</strong>",
             doLogIn: "Sign in",
             doForgotPassword: "Forgot password?",
-            doTryAnotherWay: "Use another way",
+            doTryAnotherWay: "Use other method",
             loginTotpTitle: "Add new authenticator app",
             loginTotpDeviceName: "Device name",
             emailForgotTitle: "Forgot your password?",
