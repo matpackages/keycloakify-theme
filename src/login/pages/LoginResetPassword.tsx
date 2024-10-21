@@ -3,6 +3,7 @@ import { kcSanitize } from "keycloakify/lib/kcSanitize";
 import type { PageProps } from "keycloakify/login/pages/PageProps";
 import type { KcContext } from "../KcContext";
 import type { I18n } from "../i18n";
+import { Icon } from '@iconify/react';
 
 export default function LoginResetPassword(props: PageProps<Extract<KcContext, { pageId: "login-reset-password.ftl" }>, I18n>) {
     const { kcContext, i18n, doUseDefaultCss, Template, classes } = props;
@@ -72,7 +73,9 @@ export default function LoginResetPassword(props: PageProps<Extract<KcContext, {
                     <div id="kc-form-options" className={kcClsx("kcFormOptionsClass")}>
                         <div className={kcClsx("kcFormOptionsWrapperClass")}>
                             <div className="d-grid d-block mt-2">
-                                <a href={url.loginUrl} className="btn btn-light">{msg("backToLogin")}</a>
+                                <a href={url.loginUrl} className="btn btn-light">
+                                    <Icon icon="fa6-solid:arrow-left" className="text-muted me-2 vfix"/>
+                                    {msg("backToLogin")}</a>
                             </div>
                         </div>
                     </div>

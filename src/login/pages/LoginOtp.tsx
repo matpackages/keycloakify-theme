@@ -25,7 +25,7 @@ export default function LoginOtp(props: PageProps<Extract<KcContext, { pageId: "
             doUseDefaultCss={doUseDefaultCss}
             classes={classes}
             displayMessage={!messagesPerField.existsError("totp")}
-            headerNode={msg("doLogIn")}
+            headerNode={msg("loginAccountTitle")}
         >
             <form id="kc-otp-login-form" className={kcClsx("kcFormClass")} action={url.loginAction} method="post">
                 {otpLogin.userOtpCredentials.length > 1 && (
